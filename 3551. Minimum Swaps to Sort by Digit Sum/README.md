@@ -6,12 +6,10 @@
 
 <p>You are given an array <code>nums</code> of <strong>distinct positive integers</strong>.</p>
 
-
 <p>
 You need to sort the array in increasing order based on the <strong>sum of the digits</strong> of each number.
 If two numbers have the same digit sum, the smaller number appears first in the sorted order.
 </p>
-
 
 <p>
 Return the <strong>minimum number of swaps</strong> required to rearrange <code>nums</code> into this sorted order.
