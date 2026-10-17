@@ -5,6 +5,7 @@
 
 <hr>
 
+
 <p>You are given an array <code>nums</code> of <strong>distinct positive integers</strong>.</p>
 
 
