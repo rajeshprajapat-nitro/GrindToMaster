@@ -2,6 +2,7 @@
 
 <img src="https://img.shields.io/badge/Difficulty-Medium-orange" alt="Difficulty: Medium" />
 
+
 <hr>
 
 <p>You are given an array <code>nums</code> of <strong>distinct positive integers</strong>.</p>
