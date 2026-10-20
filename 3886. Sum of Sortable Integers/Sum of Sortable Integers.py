@@ -8,33 +8,41 @@ class Solution(object):
                 continue
 
             valid = True
+            prev_last = None
 
             for start in range(0, n, k):
-                descents = 0
+                end = start + k
+                desc = -1
 
-                for i in range(start, start + k - 1):
+                for i in range(start, end - 1):
                     if nums[i] > nums[i + 1]:
-                        descents += 1
+                        if desc != -1:
+                            valid = False
+                            break
+                        desc = i
 
-                # Include the circular boundary
-                if nums[start + k - 1] > nums[start]:
-                    descents += 1
+                if not valid:
+                    break
 
-                if descents > 1:
+                # Rotate after the descent, if one exists.
+                if desc != -1:
+                    if nums[end - 1] > nums[start]:
+                        valid = False
+                        break
+
+                    first = nums[desc + 1]
+                    last = nums[desc]
+                else:
+                    first = nums[start]
+                    last = nums[end - 1]
+
+                if prev_last is not None and prev_last > first:
                     valid = False
                     break
 
-            if valid:
-                # Verify the rotated blocks collectively form a sorted array
-                rotated = []
-                for start in range(0, n, k):
-                    block = nums[start:start + k]
-                    best = min(
-                        block[i:] + block[:i] for i in range(k)
-                    )
-                    rotated.extend(best)
+                prev_last = last
 
-                if rotated == sorted(rotated):
-                    ans += k
+            if valid:
+                ans += k
 
         return ans
