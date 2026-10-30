@@ -5,7 +5,6 @@ class Solution(object):
     def shortestPath(self, n, edges, labels, k):
         
       
-
         adj = defaultdict(list)
 
         for u, v, w in edges:
