@@ -9,7 +9,7 @@ class Solution(object):
         :type labels: str
         :type k: int 
         :rtype: int
-        "
+        
 
         adj = defaultdict(list)
 
