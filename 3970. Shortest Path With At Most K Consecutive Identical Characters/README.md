@@ -7,7 +7,7 @@
 <p>
     <img src="https://img.shields.io/badge/Difficulty-Medium-yellow" alt="Difficulty Medium">
 </p>
-
+ 
 <hr>
 
 <p>
