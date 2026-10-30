@@ -8,7 +8,7 @@ class Solution(object):
         :type edges: List[List[int]]
         :type labels: str
         :type k: int 
-        :rtype: i
+        :rtype: 
         
 
         adj = defaultdict(list)
