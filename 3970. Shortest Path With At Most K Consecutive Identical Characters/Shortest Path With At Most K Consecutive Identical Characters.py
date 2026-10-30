@@ -7,7 +7,7 @@ class Solution(object):
         :type n: int
         :type edges: List[List[int]]
         :type labels: str
-        :type k: int
+        :type k: int 
         :rtype: int
         """
 
