@@ -1,4 +1,4 @@
-<h2>
+ <h2>
     <a href="https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/">
         3970. Shortest Path With at Most K Consecutive Identical Characters
     </a>
